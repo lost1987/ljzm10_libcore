@@ -1,0 +1,106 @@
+package ronco.ui.tree {
+	
+	import ronco.base.*;
+	
+	/**
+	 * 树组件的数据VO
+	 * 这个类定义为动态类，可以根据需要添加属性
+	 * 目前可以在对应的XML中写入相应 节点属性，会自动添加进这个类中
+	 * 这里的树结构使用的是递归存放形式
+	 * @author yanghongbin
+	 * e-mail:assinyang@163.com
+	 *
+	 */
+	public dynamic class TreeCellRendererVO {
+		/**
+		 *父节点的数据
+		 */
+		private var _parentNode:TreeCellRendererVO;
+		/**
+		 *子节点的数据 Array<TreeCellRendererVO>
+		 */
+		private var _childNodes:Array;
+		/**
+		 *是否有父节点
+		 * [read-only]
+		 */
+		private var _hasParentNode:Boolean;
+		/**
+		 *是否有子节点
+		 * [read-only]
+		 */
+		private var _hasChildNodes:Boolean;
+		/**
+		 *节点文字
+		 */
+		private var _label:String;
+		/**
+		 *节点文字颜色
+		 */
+		public var _labelColor:int;
+		/**
+		 *是否显示icon
+		 */
+		public var _hasIcon:Boolean;		
+		
+		public function TreeCellRendererVO() {
+		}
+		
+		public function get label():String {
+			return _label;
+		}
+		
+		public function set label(value:String):void {
+			_label = value;
+		}
+		
+		public function get labelColor():String {
+			return Base.color2str(_labelColor);
+		}
+		
+		public function set labelColor(value:String):void {
+			_labelColor = Base.str2color(value);
+		}
+		
+		public function get hasIcon():String {
+			return _hasIcon.toString();
+		}
+		
+		public function set hasIcon(value:String):void {
+			_hasIcon = value == "true";
+		}		
+		
+		public function get hasChildNodes():Boolean {
+			return _hasChildNodes;
+		}
+		
+		
+		public function get hasParentNodes():Boolean {
+			return _hasParentNode;
+		}
+		
+		
+		public function get childNodes():Array {
+			return _childNodes;
+		}
+		
+		public function set childNodes(value:Array):void {
+			_childNodes = value;
+			
+			this._hasChildNodes = true;
+		}
+		
+		public function get parentNode():TreeCellRendererVO {
+			return _parentNode;
+		}
+		
+		public function set parentNode(value:TreeCellRendererVO):void {
+			_parentNode = value;
+			
+			if (_parentNode != null) {
+				this._hasParentNode = true;
+			}
+		}
+		
+	}
+}

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<flexLibProperties includeAllClasses="true" useMultiPlatformConfig="false" version="3">
+  <includeClasses>
+    <classEntry path="ronco.ui.UIElement"/>
+    <classEntry path="ronco.ui.UIListener"/>
+    <classEntry path="ronco.ui.Button"/>
+    <classEntry path="ronco.ui.UIModule"/>
+    <classEntry path="ronco.ui.UIDef"/>
+    <classEntry path="ronco.ui.UIMgr"/>
+    <classEntry path="ronco.ui.UICtrl"/>
+    <classEntry path="ronco.ui.Image"/>
+    <classEntry path="ronco.base.Module"/>
+    <classEntry path="ronco.base.ModuleMgr"/>
+    <classEntry path="ronco.base.ModuleInfo"/>
+    <classEntry path="ronco.base.ModDef"/>
+    <classEntry path="ronco.base.ResMgr"/>
+    <classEntry path="ronco.base.ModuleFileInfo"/>
+    <classEntry path="ronco.bbxq.Tips_Normal"/>
+    <classEntry path="ronco.bbxq.ObjChatInfo"/>
+    <classEntry path="ronco.base.AStar_Node"/>
+    <classEntry path="ronco.base.AStar"/>
+    <classEntry path="ronco.base.AStar_Grid"/>
+    <classEntry path="ronco.bbxq.ObjAni"/>
+    <classEntry path="ronco.bbxq.ObjAniMgr"/>
+    <classEntry path="ronco.bbxq.AvatarRes"/>
+    <classEntry path="ronco.bbxq.AvatarMgr"/>
+    <classEntry path="ronco.base.Base"/>
+    <classEntry path="ronco.bbxq.BaseObj_MapArea"/>
+    <classEntry path="ronco.base.ListenerModuleMgr"/>
+    <classEntry path="ronco.base.ListenerCtrl"/>
+    <classEntry path="ronco.base.CtrlMgr"/>
+    <classEntry path="ronco.ui.ScrollBar"/>
+    <classEntry path="ronco.ui.StateImg"/>
+    <classEntry path="ronco.ui.ImgNumber2"/>
+    <classEntry path="ronco.bbxq.BaseObj_SWFState"/>
+    <classEntry path="ronco.base.MediaMgr"/>
+    <classEntry path="ronco.base.ResLoader"/>
+    <classEntry path="ronco.base.CtrlKeyboard"/>
+    <classEntry path="ronco.base.DataLoader"/>
+    <classEntry path="ronco.ui.TextEx"/>
+    <classEntry path="ronco.ui.CD"/>
+    <classEntry path="ronco.base.ResizeMgr"/>
+    <classEntry path="ronco.ui.ClickObj"/>
+    <classEntry path="ronco.ui.GIF"/>
+    <classEntry path="ronco.ui.Label3"/>
+  </includeClasses>
+  <includeResources/>
+  <namespaceManifests/>
+</flexLibProperties>
